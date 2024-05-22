@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #1149ae;
+  --white-color: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.section_padding_top {
+  padding: 2rem;
+}
+
+.section_heading_center {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section_heading_center h2 {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section_heading_center h2:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background: var(--main-color);
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+}
+
+.destinations_content_box {
+  position: relative;
+  margin-bottom: 23px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.destinations_content_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+}
+
+.destinations_content_inner h2 {
+  margin-bottom: 20px;
+}
+
+.destinations_content_inner h3 a {
+  color: var(--white-color);
+  font-size: 1rem;
+}
+
+.btn {
+  width: 50%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+.btn-med {
+  text-align: center;
+  padding: 1rem 46px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.destinations_content_box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_botom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 678px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .card_botom {
+    display: flex;
+    align-items: stretch;
+  }
+  .btn-med {
+    width: 100%;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 678px) and (max-width: 991px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .card_botom {
+    display: flex;
+    align-items: stretch;
+  }
+  .btn-med {
+    width: 100%;
+  }
+  img {
+    object-fit: cover;
+  }
+}
